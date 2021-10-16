@@ -1,0 +1,4 @@
+{
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-21.04",
+    "postCreateCommand": "sudo apt install -y gcc-riscv64-linux-gnu device-tree-compiler iverilog"
+}
