@@ -1,4 +1,3 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-21.04",
-    "postCreateCommand": "sudo apt install -y make gcc gcc-riscv64-linux-gnu device-tree-compiler iverilog"
+    "build": { "dockerfile": "Dockerfile" },
 }
