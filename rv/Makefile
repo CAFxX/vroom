@@ -527,7 +527,7 @@ opensbi.bin: linux/opensbi-master/build/platform/moonbase/firmware/fw_jump.elf
 	riscv64-linux-gnu-objdump -d linux/opensbi-master/build/platform/moonbase/firmware/fw_jump.elf >opensbi.lst
 
 sv.dtb:	sv.dts
-	../dtc -I dts sv.dts -o sv.dtb
+	dtc -I dts sv.dts -o sv.dtb
 
 fpt:	testfp.sv fp_add.sv mkf1.inc mkf2.inc fp_mul.sv mkf3.inc
 	iverilog testfp.sv fp_add.sv fp_mul.sv -g 2005-sv -o fpt
