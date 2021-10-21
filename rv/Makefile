@@ -52,7 +52,7 @@ UART = rvuart.sv uart/raminfr.v uart/uart_receiver.v uart/uart_regs.v uart/uart_
 UART_DEF1 = +incdir+uart 
 UART_DEF2 = -Iuart 
 
-VERILATOR= /opt/verilator-4.026/bin/verilator
+VERILATOR=verilator
 
 MX = mkinc4.inc mkinc8.inc mkinc16.inc
 MX2 = mk2_4.inc mk2_8.inc mk2_16.inc
